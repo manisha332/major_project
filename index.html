@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">ShopEase</div>
+        
+        <div class="search-container">
+            <input type="text" list="product-suggestions" placeholder="Search for products..." class="search-input">
+            <datalist id="product-suggestions">
+                <option value="Wireless Headphones"></option>
+                <option value="Smart Watch"></option>
+                <option value="Running Shoes"></option>
+                <option value="Bluetooth Speaker"></option>
+                <option value="Laptop Backpack"></option>
+            </datalist>
+            <button class="btn-search">Search</button>
+        </div>
+
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">My Orders</a>
+            <a href="#">Cart (2)</a>
+            <a href="#" class="btn-logout">Logout</a>
+        </nav>
+    </header>
+
+    <main class="container user-dashboard">
+        <h2>Latest Products</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Wireless Headphones" class="product-image">
+                <h3>Wireless Headphones</h3>
+                <p class="price">₹1,999</p>
+             <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="Smart Watch" class="product-image">
+                <h3>Smart Watch</h3>
+                <p class="price">₹2,499</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="Running Shoes" class="product-image">
+                <h3>Running Shoes</h3>
+                <p class="price">₹1,299</p>
+                <button class="btn-primary">Add to Cart</button>
+            </div>
+
+        </div>
+    </main>
+
+    <hr class="divider">
+
+    <main class="container admin-dashboard">
+        <h2>Admin Panel</h2>
+        <div class="admin-controls">
+            <button class="btn-secondary">Add New Product</button>
+            <button class="btn-secondary">View All Customers</button>
+            <button class="btn-secondary">View All Orders</button>
+        </div>
+
+        <div class="admin-data-table">
+            <h3>Recent Orders</h3>
+            <table>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>#ORD-001</td>
+                    <td>Rahul Kumar</td>
+                    <td>₹1,999</td>
+                    <td><span class="badge status-pending">Pending</span></td>
+                </tr>
+                <tr>
+                    <td>#ORD-002</td>
+                    <td>Priya Sharma</td>
+                    <td>₹3,798</td>
+                    <td><span class="badge status-shipped">Shipped</span></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,1 +1,1 @@
-# major_project
+# ecommerce-frontend
